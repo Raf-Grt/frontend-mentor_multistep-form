@@ -1,0 +1,61 @@
+.sidebar {
+  background: url("../../assets/images/bg-sidebar-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  color: var(--white);
+
+  &__list {
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+
+    &.active {
+      .sidebar__step--number {
+        background: var(--light-blue);
+        border: 1px solid var(--light-blue);
+        color: var(--purplish-blue);
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__step {
+    &--number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      width: 35px;
+      border: 1px solid var(--white);
+      border-radius: 99px;
+      font-family: var(--font-medium);
+    }
+
+    &--name {
+      color: var(--pastel-blue);
+      font-size: 14px;
+    }
+
+    &--heading {
+      font-family: var(--font-bold);
+      color: var(--white);
+      font-size: 14px;
+    }
+  }
+}

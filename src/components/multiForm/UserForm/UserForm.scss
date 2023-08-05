@@ -1,0 +1,29 @@
+.user-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    font-family: var(--font-medium);
+    margin-bottom: 8px;
+  }
+
+  input {
+    padding: 15px 20px;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+
+    &::placeholder {
+      font-family: var(--font-bold);
+      color: var(--cool-gray);
+    }
+  }
+}

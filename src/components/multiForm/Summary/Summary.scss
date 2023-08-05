@@ -1,0 +1,68 @@
+.summary {
+  &__container {
+    background-color: var(--alabaster);
+    padding: 20px 30px;
+    border-radius: var(--border-radius);
+  }
+
+  &__plan {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: var(--cool-gray);
+    font-family: var(--font-medium);
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--purplish-blue);
+    }
+  }
+
+  &__price {
+    font-family: var(--font-bold);
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--light-gray);
+    margin-bottom: 20px;
+  }
+
+  &__addons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    &--name {
+      color: var(--cool-gray);
+    }
+  }
+
+  &__total {
+    color: var(--cool-gray);
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+
+    span {
+      color: var(--purplish-blue);
+      font-family: var(--font-bold);
+      font-size: 18px;
+    }
+  }
+}

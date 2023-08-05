@@ -1,0 +1,23 @@
+.confirmation-form {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+
+  &__container {
+    max-width: 450px;
+    text-align: center;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--cool-gray);
+    }
+  }
+}
